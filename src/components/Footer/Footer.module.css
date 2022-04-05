@@ -1,0 +1,35 @@
+.footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+a.link {
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+}
+
+a.link:visited,
+a.link:hover {
+  color: #3eb489;
+}
+
+a.link:hover {
+  color: #3eb489;
+}
+
+.inner {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.1rem;
+  margin: 0 1em;
+}
+
+@media (max-width: 992px) {
+  .inner {
+    justify-content: center;
+  }
+}

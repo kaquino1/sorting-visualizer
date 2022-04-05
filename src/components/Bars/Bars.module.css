@@ -1,0 +1,19 @@
+.bars {
+  margin: 5em auto;
+  min-height: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100vw;
+}
+
+.block {
+  background-color: #000;
+  display: inline-block;
+  border-radius: 5px;
+  width: 20px;
+  margin: 0 2px;
+  transition-duration: 20ms;
+  transition-property: height;
+  transition-timing-function: ease-in;
+}
