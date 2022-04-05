@@ -10,9 +10,8 @@ a.link {
   color: #000;
 }
 
-a.link:visited,
-a.link:hover {
-  color: #3eb489;
+a.link:visited {
+  color: #000;
 }
 
 a.link:hover {
