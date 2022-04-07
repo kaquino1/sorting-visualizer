@@ -52,7 +52,7 @@ const App = () => {
   };
 
   const handleSort = () => {
-    const sortAccOrder = order => {
+    const showSteps = order => {
       (function loop(i) {
         setTimeout(() => {
           const [j, k, arr, index] = order[i];
@@ -79,11 +79,11 @@ const App = () => {
     };
 
     setIsSorting(true);
-    if (algorithm === 'bubbleSort') return sortAccOrder(bubbleSort(blocks));
-    if (algorithm === 'selectionSort') return sortAccOrder(selectionSort(blocks));
-    if (algorithm === 'insertionSort') return sortAccOrder(insertionSort(blocks));
-    if (algorithm === 'mergeSort') return sortAccOrder(mergeSort(blocks));
-    if (algorithm === 'quickSort') return sortAccOrder(quickSort(blocks));
+    if (algorithm === 'bubbleSort') return showSteps(bubbleSort(blocks));
+    if (algorithm === 'selectionSort') return showSteps(selectionSort(blocks));
+    if (algorithm === 'insertionSort') return showSteps(insertionSort(blocks));
+    if (algorithm === 'mergeSort') return showSteps(mergeSort(blocks));
+    if (algorithm === 'quickSort') return showSteps(quickSort(blocks));
     setIsSorting(false);
     setIsCompleted(true);
   };
